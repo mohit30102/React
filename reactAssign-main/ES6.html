@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let ans1 = () => {
+
+        //         let cir = parseFloat(prompt("enter radius of circle"))
+
+        //         let rect1 = parseFloat(prompt("enter length of rectangle "))
+        //         let rect2 = parseFloat(prompt("enter width of rectangle "))
+
+        //         let tri1 = parseFloat(prompt("enter height of triangle "))
+        //         let tri2 = parseFloat(prompt("enter  base of triangle "))
+
+        //         const area = () => {
+        //             let ans1 = 3.14 * cir * cir
+
+        //             let ans2 = rect1 * rect2
+
+        //             let ans3 = 0.5 * tri1 * tri2
+
+        //             document.writeln('<br/>area of circle', ans1);
+        //             document.writeln('<br/>area of rectangle', ans2);
+        //             document.writeln('<br/>area of triangle', ans3);
+        //         }
+        //         area()
+        //     }
+        //     ans1()
+
+        // let ans2 = () => {
+        //     let a = [1, 2, 3, 4, 5]
+        //     let sq = a.map((i) => i * i)
+        //     let cb = a.map((i) => i * i * i)
+
+        //     document.write('<br/> sqaure of elems', sq);
+        //     document.write('<br/> cube of elems', cb);
+        // }
+        // ans2()
+
+        // let ans34 = () => {
+        //     let b = [11, 22, 33, 44, 55]
+
+        //     b.map((i) => document.write('<br/> accessing elements :', i))
+        //     b.includes(44) ? document.write('<br/> no is found') : document.write('<br/> no is not found');
+
+        // }
+        // ans34()
+
+        // let ans5 = (addition) => {
+        //     let a = [10, 20, 30, 40, 50]
+
+        //     console.log(a.reduce(addition))
+
+        //     let add = (acc, curr) => {
+        //         return acc + curr;
+        //     }
+        //     add()
+        // }
+        // ans5()
+
+        let ans67 = () => {
+            let arr = [11, 22, 33, 44, 55]
+            let year = [2000, 2001, 2002, 2003, 2004]
+
+            let odd = arr.filter((num) => num % 2 !== 0)
+            document.write(odd);
+
+            let even = arr.filter((num) => num % 2 === 0)
+            document.write(even);
+
+            let leap = year.filter((num) => num % 4 === 0)
+            document.write(leap);
+
+        }
+        ans67()
+
+        let ans8 = () => {
+            let a = [10, 20, 30, 40, 50]
+            let arr = [11, 22, 33, 44, 55]
+            let merged = [...a, ...arr]
+            document.write('<br/> merged arr :',merged);
+        }
+        ans8()
+
+        let ans9 = () => {
+            const Student = {
+                name: 'vikas',
+                age: 22,
+                marks: 80
+            }
+            console.log('<br/> student name :',Student.name);
+            console.log('<br/>student age', Student.age);
+            console.log('<br/> student marks', Student.marks);
+
+        }
+        ans9()
+
+
+        let ans10 = () => {
+            const count = 0;
+            let arr = ["mango", "orange", "mango", "apple", "apple", "pineple", "apple"]
+            for (let i = 0; i < arr.length; i++) {
+                let ele = arr[i];
+                if (count[ele]) {
+                    count[ele] += 1;
+                } else {
+                    count[ele] = 1;
+                }
+            }
+            document.write('<br/> frequency of elems :',count);
+        }
+        ans10()
+    </script>
+</body>
+
+</html>
